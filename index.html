@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">-->
+  <link rel="stylesheet" href="design.css">
+
+  <title>Music Genre Website</title>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="logo">🎵 Playful Music</div>
+
+    <div class="search-box">
+      <input type="text" id="search-box" placeholder="Search music, genre...">
+
+      
+      <p id="no-results" style="display: none; text-align: center; font-weight: bold; color: red; margin-top: 10px;">
+        No results found.</p>
+
+    </div>
+
+    <div class="header-buttons">
+      <button class="btn login">Login</button>
+      <button class="btn signup">Sign Up</button>
+      <button class="btn download">⬇ Download</button>
+    </div>
+  </header>
+
+  <h1 id="side-title">Playful Music</h1>
+  <section class="section-container">
+    <h2 class="section-container">Explore by Genre</h2>
+    <div class="container genre-container">
+
+      <div class="genre-card" data-id="pop">
+        <h3>Pop</h3>
+        <p>Catchy rhythms and mainstream appeal.</p>
+        <div class="music-player" id="pop-player">
+          <iframe data-testid="embed-iframe" style="border-radius:12px"
+            src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="genre-card" data-id="classical">
+        <h3>Classical</h3>
+        <p>Old school and forever heartwarming.</p>
+
+        <div class="music-player" id="classical-player">
+          <iframe data-testid="embed-iframe" style="border-radius:12px"
+            src="https://open.spotify.com/embed/playlist/4kdq7V1GAOAqPofLbMPg10?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="genre-card" data-id="romance">
+        <h3>Romance</h3>
+        <p>Makes you fall in love.</p>
+        <div class="music-player" id="romance-player">
+          <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWVq1SXCH6uFn?si=ovYwFkpiT9W4rUJRvhGRbw"
+            width="100%" height="352" frameborder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div class="genre-card" data-id="rap">
+        <h3>Rap</h3>
+        <p>Fast and heart beating.</p>
+        <div class="music-player" id="rap-player">
+          <iframe data-testid="embed-iframe" style="border-radius:12px"
+            src="https://open.spotify.com/embed/album/7BRIUafUOwCwNt5ERXFkVV?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </iframe>
+        </div>
+      </div>
+      <div class="genre-card" data-id="All-time-fav">
+        <h3>All-time-fav</h3>
+        <p>List of most popular songs of all time</p>
+        <div class="music-player" id="All-time-fav-player">
+          <iframe data-testid="embed-iframe" style="border-radius:12px"
+            src="https://open.spotify.com/embed/playlist/5ABHKGoOzxkaa28ttQV9sE?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!--New class started-->
+  <section class="section-container">
+    <h2 class="section-heading">Explore by artist</h2>
+    <div class="container artist-container">
+
+      <div class="artist-card" data-id="Atif-Aslam">
+        <h3>Atif-Aslam</h3>
+        <p>Voice so soothing in a mix of high and low that releases adredline</p>
+        <div class="music-player" id="Atif-Aslam-player">
+          <iframe data-testid="embed-iframe" style="border-radius:12px"
+            src="https://open.spotify.com/embed/playlist/37i9dQZF1EIXwUP9lmHosa?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <div class="artist-card" data-id="Ed-Sheeran">
+        <h3>Ed-Sheeran</h3>
+
+        <p>Extremely soothing and golden Voice</p>
+        <div class="music-player" id="Ed-Sheeran-player">
+          <iframe data-testid="embed-iframe" style="border-radius:12px"
+            src="https://open.spotify.com/embed/playlist/6M14oz8xWgu8XzDv5OQB5Y?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="artist-card" data-id="Kishore-kumar">
+        <h3>Kishore Kumar</h3>
+        <p>Voice from history that will be remembered forever </p>
+        <div class="music-player" id="Kishore-kumar-player">
+          <iframe data-testid="embed-iframe" style="border-radius:12px"
+            src="https://open.spotify.com/embed/playlist/1fYx6s4pBo4g04mRLPV8gu?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="artist-card" data-id="Eminem">
+        <h3>Eminem</h3>
+        <p>So fast that you could not catch</p>
+        <div class="music-player" data-id="Eminem-player">
+          <iframe data-testid="embed-iframe" style="border-radius:12px"
+            src="https://open.spotify.com/embed/album/6t7956yu5zYf5A829XRiHC?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="artist-card" data-id="Shreya-Ghosal">
+        <h3>Shreya Ghosal</h3>
+        <p>Indian Nightagle</p>
+        <div class="music-player" data-id="Shreya-Ghosal-player">
+          <iframe data-testid="embed-iframe" style="border-radius:12px"
+            src="https://open.spotify.com/embed/album/2BamEYQikshxMzTxHYxCNc?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Login and Sign Up Modal -->
+<div id="auth-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2 id="modal-title">Login</h2>
+    <input type="text" placeholder="Email or Username" />
+    <input type="password" placeholder="Password" />
+    <button id="auth-submit">Submit</button>
+  </div>
+</div>
+
+
+
+  <footer class="site-footer">
+    <div class="footer-section">
+      <h3>About</h3>
+      <p>Playful Music is a simple genre-based music guide website where users can explore music types and artists.
+        Built for fun and learning!</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>Email: support@playfulmusic.com</p>
+      <p>Phone: +91-7061431159</p>
+      <p>Instagram: <a href="https://www.instagram.com/_the.shubham.singh_?igsh=MXBhZjJ5ZGwweHhkZA=="
+          target="_blank">@_the.shubham.singh_</a></p>
+
+    </div>
+
+    <div class="footer-section">
+      <h3>Created By</h3>
+      <p>Shubham Singh</p>
+      <p>CSE, Sher Shah College of Engineering</p>
+      <p>
+        <a href="https://www.linkedin.com/in/www.linkedin.com/in/shubham-singh-23978a214/" target="_blank"
+          style="text-decoration: none; color: #0077b5;">
+          <i class="fab fa-linkedin fa-lg"></i> Connect on LinkedIn
+        </a>
+      </p>
+    </div>
+  </footer>
+  <button id="backToTop" title="Go to top">⬆</button>
+
+
+
+  <script src="funtioning.js"></script>
+</body>
+
+</html>
